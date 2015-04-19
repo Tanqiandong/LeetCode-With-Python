@@ -5,6 +5,7 @@
 class Solution:
     # @param a list of integers
     # @return an integer
+    # 方法1,超时了
     def removeDuplicates(self, A):
         i, length = 1, len(A)
         while i < length:
@@ -18,6 +19,7 @@ class Solution:
         print A
         return length
 
+    # 方法2，Runtime:139ms
     def removeDuplicates2(self, A):
         pace, length = 0, len(A)
         for i in range(1, length):
@@ -28,4 +30,3 @@ class Solution:
         A = A[:length:]
         print A
         return length
-
